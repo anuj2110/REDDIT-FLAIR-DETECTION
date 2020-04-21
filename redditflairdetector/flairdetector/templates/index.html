@@ -1,11 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 🔥 Detector</title>
-</head>
-<body>
-    <h1 style="color: red;">Hello World</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+
+<div style="margin-top: 100px; margin-left: 100px;">
+    <form method="POST" action="/" name="myform">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">Enter url of reddit post</label>
+        </div>
+        <div class="form-group">
+            <div class="col-md-11">
+                <input type="text" class="form-control input-sm"  aria-describedby="emailHelp"
+                    placeholder="Enter URL here" name="URL">
+            </div>
+        </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+    </form>
+    {% if show %}
+      {{url}}
+
+    {% else %}
+     
+    {% endif %}
+</div>
+
+{% endblock %}
