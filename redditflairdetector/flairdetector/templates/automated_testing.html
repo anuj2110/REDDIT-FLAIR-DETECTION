@@ -2,6 +2,21 @@
 
 {% block content %}
 
+<div style="margin-top: 100px; margin-left: 100px;">
+    <form method="POST" action="automated_testing" name="myform" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="file" name='myfile'>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% if uploaded_file_url %}
+ {{uploaded_file_url}}
+{% endif %}
 
 
 {% endblock %}
