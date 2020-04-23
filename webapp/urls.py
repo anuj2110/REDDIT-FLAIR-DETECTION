@@ -1,4 +1,4 @@
-"""redditflairdetector URL Configuration
+"""webapp URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -19,5 +19,5 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('flairdetector.urls'))
+    path('',include('reddit_flair_detector.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
