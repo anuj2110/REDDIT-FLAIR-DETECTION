@@ -30,6 +30,15 @@ The main directory is a **django application** hosted on **heroku**. The importa
 - For **automated testing**:
   - The required key for automated testing is **upload_file**
   - The url for automated testing after running locally will be (example) **http://127.0.0.1:8000/automated_testing**
+  
+## Important Packages:
+- Praw
+- numpy
+- pandas
+- matplotlib
+- scikit-learn
+- django
+- Seaborn
 
 
 
