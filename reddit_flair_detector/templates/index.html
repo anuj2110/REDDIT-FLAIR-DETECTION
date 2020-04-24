@@ -9,19 +9,36 @@
         </div>
         <div class="form-group">
             <div class="col-md-11">
-                <input type="text" class="form-control input-sm"  aria-describedby="emailHelp"
+                <input type="text" class="form-control input-sm" aria-describedby="emailHelp"
                     placeholder="Enter URL here" name="URL">
             </div>
         </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
     {% if show %}
-      {{url}}
+    
+    <div class="table-responsive"> 
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Url</th>
+                    <th scope="col">Flair</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{url}}</td>
+                    <td><strong>{{pred}}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
 
     {% else %}
-     
+
     {% endif %}
 </div>
 

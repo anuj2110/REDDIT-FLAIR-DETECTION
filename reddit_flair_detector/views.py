@@ -13,7 +13,7 @@ def predictOnLink(request):
         url = str(request.POST.get('URL'))
         if url is not None:
             pred = makePredictions(url,ml_model,preprocessor,reddit,stopwords,labeltoflair)
-            return render(request,'index.html',{'url':pred,'show':True})
+            return render(request,'index.html',{'url':url,'show':True,'pred':pred})
         else:
             return render(request,'index.html',{'show':False})
     return render(request, 'index.html',{'show':False})
