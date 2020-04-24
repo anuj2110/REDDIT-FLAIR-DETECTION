@@ -9,10 +9,10 @@ import os
 
 dir_ = os.getcwd()
 
-config_file =dir_+"\\flairdetector\\config.json"
+config_file =dir_+"/reddit_flair_detector/config.json"
 
-model_file = dir_+"\\flairdetector\\predictorfiles\\finalmodel.sav"
-preprocessor_file = dir_+"\\flairdetector\\predictorfiles\\preprocessor.sav"
+model_file = dir_+"/reddit_flair_detector/predictorfiles/finalmodel.sav"
+preprocessor_file = dir_+"/reddit_flair_detector/predictorfiles/preprocessor.sav"
 
 with open(config_file) as f:
     config = json.load(f)
