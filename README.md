@@ -3,7 +3,7 @@
 A web app to predict reddit flairs of India subredit posts by the url(s) provided by the users using Machine Learning algorithms. [This is the web app link] and [this is the automated_testing link]
 
 ## Important Files and Directories
-The main directory is a **django application hosted** on **heroku**. The important directories and files are as follows:
+The main directory is a **django application** hosted on **heroku**. The important directories and files are as follows:
 - [media]: This folder is used to store the uploaded text file (from automated_testing route) for reading the urls.
 
 - [Notebooks and data](https://github.com/anuj2110/REDDIT-FLAIR-DETECTION/tree/master/Notebooks%20and%20data/): This directory contains the notebooks,data collected from reddit and trained ml models.
@@ -24,8 +24,8 @@ The main directory is a **django application hosted** on **heroku**. The importa
 - Clone the repository in your system.
 - cd into repository folder.
 - Create a virtual environment using Anaconda/virtualenv and activate it.
-- Run the command "pip install -r requirements.txt".
-- To start the server execute "python manage.py runserver"
+- Run the command **pip install -r requirements.txt**.
+- To start the server execute **python manage.py runserver**
 - After start it will provide the IP address. Copy this and paste it in the web browser.
 - For **automated testing**:
   - The required key for automated testing is **upload_file**
