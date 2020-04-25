@@ -28,8 +28,11 @@ def automatedTesting(request):
             with open(os.path.join(settings.MEDIA_ROOT, filename), 'r') as var:
                 for url in var:
                     url = url.rstrip()
-                    url_dict[url]= makePredictions(url,ml_model,preprocessor,reddit,stopwords,labeltoflair)
-                os.remove(path=os.path.join(settings.MEDIA_ROOT, filename))
+                    if url!="" and 'https://www.reddit.com/r/india/comments/' in url and url!='https://www.reddit.com/r/india/comments/':
+                        url_dict[url]= makePredictions(url,ml_model,preprocessor,reddit,stopwords,labeltoflair)
+                    else:
+                        url_dict[url]= "not a valid url"
+            os.remove(path=os.path.join(settings.MEDIA_ROOT, filename))
             return JsonResponse(url_dict)
         except:
             return render(request,'automated_testing.html',{'error':"Please add a file"})
