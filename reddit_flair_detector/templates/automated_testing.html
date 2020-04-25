@@ -14,8 +14,10 @@
     </form>
 </div>
 
-{% if uploaded_file_url %}
- {{uploaded_file_url}}
+{% if error %}
+<center>
+    <p style="color: red;">{{error}}</p>
+</center>
 {% endif %}
 
 

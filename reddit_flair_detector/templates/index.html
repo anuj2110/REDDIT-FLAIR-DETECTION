@@ -18,8 +18,8 @@
         </div>
     </form>
     {% if show %}
-    
-    <div class="table-responsive"> 
+
+    <div class="table-responsive">
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
@@ -35,11 +35,17 @@
             </tbody>
         </table>
     </div>
-    
+
 
     {% else %}
 
     {% endif %}
+    {% if error %}
+    <center>
+        <p style="color: red;">{{error}}</p>
+    </center>
+    {% endif %}
+
 </div>
 
 {% endblock %}
