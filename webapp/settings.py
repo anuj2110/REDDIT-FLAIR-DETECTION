@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qre#zk0#ah(hae(ep16zllk6s5o+=^d2!@w%f3=l9g8%=&*k#w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'reddit-flair-ind-det-anj.herokuapp.com',
