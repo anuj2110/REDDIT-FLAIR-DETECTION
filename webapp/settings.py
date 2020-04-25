@@ -26,8 +26,8 @@ SECRET_KEY = 'qre#zk0#ah(hae(ep16zllk6s5o+=^d2!@w%f3=l9g8%=&*k#w'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-
-    
+    'reddit-flair-ind-det-anj.herokuapp.com',
+    '127.0.0.1',
 ]
 
 
