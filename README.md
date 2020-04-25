@@ -1,10 +1,10 @@
 # Reddit Flair Detector
 ---
-A web app to predict reddit flairs of India subredit posts by the url(s) provided by the users using Machine Learning algorithms. [This is the web app link] and [this is the automated_testing link]
+A web app to predict reddit flairs of India subredit posts by the url(s) provided by the users using Machine Learning algorithms. [This is the web app link](https://reddit-flair-ind-det-anj.herokuapp.com/) and [this is the automated_testing link](https://reddit-flair-ind-det-anj.herokuapp.com/automated_testing)
 
 ## Important Files and Directories
 The main directory is a **django application** hosted on **heroku**. The important directories and files are as follows:
-- [media]: This folder is used to store the uploaded text file (from automated_testing route) for reading the urls.
+- [media](https://github.com/anuj2110/REDDIT-FLAIR-DETECTION/tree/master/media): This folder is used to store the uploaded text file (from automated_testing route) for reading the urls.
 
 - [Notebooks and data](https://github.com/anuj2110/REDDIT-FLAIR-DETECTION/tree/master/Notebooks%20and%20data/): This directory contains the notebooks,data collected from reddit and trained ml models.
 
@@ -39,6 +39,3 @@ The main directory is a **django application** hosted on **heroku**. The importa
 - scikit-learn
 - django
 - Seaborn
-
-
-
